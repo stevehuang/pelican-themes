@@ -999,7 +999,8 @@ img {
   min-height: 60px;
   display: block;
   margin-bottom: 20px;
-  background: #4a4d50;
+/*SWH  background: #4a4d50; */
+  background: #095cb0
 }
 @media only screen and (max-width: 767px) {
   .navbar {
@@ -1039,7 +1040,8 @@ img {
     font-size: 1.875rem;
   }
   .navbar a.toggle:hover {
-    background: #565a5d;
+    /*SWH background: #565a5d;*/
+    background: #095cb0;
   }
   .navbar a.toggle:active, .navbar a.toggle.active {
     background: #3e4043;
@@ -1351,7 +1353,8 @@ img {
 
 .no-touch .navbar ul li:hover > a {
   position: relative;
-  background: #868d92;
+/*SWH  background: #868d92;*/
+  background: #5B9EDE;
   z-index: 1000;
 }
 
