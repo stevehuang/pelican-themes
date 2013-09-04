@@ -19,12 +19,13 @@
   {% endif %}
   </ul>
 -->
-<h4>Categories</h4>
+<h4>Links</h4>
 {% if categories %}
 <ul>
 	{% for cat, null in categories %}
 		<li><a href="{{ SITEURL }}/{{ cat.url|e }}">{{ cat }}</a></li>
 	{% endfor %}
+   <li><a href="pythonlessons/index.html"> Python </a></li>
 </ul>
 {% endif %}
 
@@ -39,12 +40,15 @@
 {% endif %}
 -->
 
-{% if SOCIAL %}
+{% if SOCIAL  %}
 <nav class="widget">
   <h4>Social</h4>
   <ul>
   {% for url, name in SOCIAL %}
-    <li><a href="{{ url|e }}">{{ name }}</a></li>
+    <li> 
+    <a href="{{ url|e }}">{{ name }}</a>
+    <i class="icon-{{ name }}"></i>
+    </li>
   {% endfor %}
   </ul>
 </nav>
