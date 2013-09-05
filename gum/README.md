@@ -2,6 +2,10 @@
 
 Gum is a clean and responsive theme for [Pelican](https://github.com/getpelican/pelican), based on the [Gumby Framework](http://gumbyframework.com/docs).
 
+### References
+
+`Python <www.python.org>`_
+
 ### Requirements
 
 * [Pelican](https://github.com/getpelican/pelican)
