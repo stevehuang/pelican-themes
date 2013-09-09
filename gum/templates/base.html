@@ -62,16 +62,11 @@
 
 <body id="index" class="home">
 
-
-    <div class="container">
-
-        <div class="row">
-
           <header id="banner" class="body">
-                  <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-          </header><!-- /#banner -->
+<!--         <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1> -->
 
-            <div id="navigation" class="navbar row">
+            <div id="navigation" class="navbar">
+              <div class="three columns" style="min-width: 320px;"> <h3> <font color=white> &nbsp @{{ SITENAME }} </font> </h3> </div>
               <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
              
               <ul class="columns">
@@ -94,6 +89,11 @@
 
               </ul>
             </div>
+    </header><!-- /#banner -->
+
+    <div class="container">
+
+        <div class="row">
 
           {% block content %}
 
