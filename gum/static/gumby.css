@@ -1137,7 +1137,7 @@ img {
   padding: 0 16px;
   white-space: nowrap;
   color: white;
-  text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b;
+/*SWH  text-shadow: 0 1px 2px #191a1b, 0 1px 0 #191a1b; */
   height: 60px;
   line-height: 58px;
   font-size: 16px;
