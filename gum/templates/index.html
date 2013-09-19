@@ -11,13 +11,15 @@
     <ol id="post-list">
      {% for article in articles_page.object_list %}
      <li><article class="hentry">
-       <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-       <footer class="post-info">
-       <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-       {% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
-       </footer><!-- /.post-info -->
-
-       <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+       <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                {{ article.title }}</a></h2> </header>
+       <div class="fourteen columns"> <footer class="post-info primary label twelve columns" style="text-align:left; padding-left:10px; padding-top:0;">
+       {% if article.author %} By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> {% endif %} 
+       &nbsp | &nbsp {{ article.locale_date }}
+       </footer><!-- /.post-info --> </div>
+       <div class="entry-content twelve columns "> 
+       <br>
+       {{ article.summary }} </div><!-- /.entry-content -->
        <div class="medium primary btn"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">Read more <i class="icon-arrow-right"></i></a></div>
       <div class="row tag-row">
       {% if article.tags %}

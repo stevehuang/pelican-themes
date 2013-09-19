@@ -962,7 +962,7 @@ img {
   }
 
   .column, .columns {
-    width: auto !important;
+    width: auto;
     float: none;
     margin-left: 0;
     margin-right: 0;
@@ -1028,7 +1028,8 @@ img {
     text-align: center;
     display: inline-block;
     color: white;
-    background: #4a4d50;
+/*SWH    background: #4a4d50;*/
+    background: #919191;
     height: 40px;
     line-height: 38px;
     -webkit-border-radius: 4px;
@@ -1044,7 +1045,8 @@ img {
     background: #095cb0;
   }
   .navbar a.toggle:active, .navbar a.toggle.active {
-    background: #3e4043;
+    /* SWH background: #3e4043; */
+    background:#919191;
   }
 }
 .navbar .logo {
@@ -1092,7 +1094,7 @@ img {
     left: 0;
     overflow: hidden;
     text-align: center;
-    background: #3e4043;
+    background: #919191;
   }
   .navbar ul.active {
     height: auto;
@@ -5368,7 +5370,7 @@ form fieldset legend {
   color: #fff;
 }
 .badge.primary, .label.primary {
-  background: #3085d6;
+  background: #919191;
 }
 .badge.light, .label.light {
   background: #fff;
